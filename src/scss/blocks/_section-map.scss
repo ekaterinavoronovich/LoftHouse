@@ -1,0 +1,78 @@
+.section-map {
+ padding: 180px 0;
+ @include mediaTablet{
+  padding: 90px 0; 
+ }
+ position: relative;
+ &::after {
+  
+   position: absolute;
+   content: "V";
+   top:180px;
+   right: calc(50% + 555px);
+   transform: translate(50%,0%);
+   line-height: 1;
+   opacity: 0.02;
+   font-size: 20.83vmax; //400px;
+   font-family: var(--font-accent);
+ }
+  // .section-map__map
+
+  &__map {
+    margin-top: 88px;
+    @include mediaTablet{
+      margin-top: 44px; 
+     }
+  }
+}
+
+.map {
+ 
+height: 358px;
+ background: #626262;
+}
+
+[class*="copyrights-pane"] {
+	/* display: none !important; */
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+
+.map:hover [class*="copyrights-pane"] {
+    opacity: 1;
+}
+
+/* Создать свою карту */
+[class*="gototech"] {
+    display: none !important;
+}
+
+[class*="ground-pane"] {
+	filter: grayscale(1) sepia(10%);
+}
+
+/* Baloon */
+
+[class*="balloon__layout"], [class*="balloon__content"] {
+	background-color: #242b33 !important;
+    color: #fff !important;
+}
+
+[class*="balloon__tail"]::after {
+	background-color: #242b33 !important;
+}
+
+[class*="balloon_layout_panel"] {
+	background-color: #242b33 !important;
+}
+
+[class*="balloon__layout"], [class*="balloon__content"] a {
+    color: var(--text-accent) !important;
+}
+
+[class*="balloon__close-button"] {
+    background: url('./../img/icon/cross.svg') 50% no-repeat !important;
+    width: 15px !important;
+    height: 15px !important;
+    margin: 10px 7px;
+}

@@ -1,0 +1,32 @@
+.nav {
+  @media screen and (max-width:$tablet-size) {
+    display: none;
+  }
+  // .nav__list
+
+  &__list {
+   display: flex;
+   column-gap: 40px; 
+  }
+ 
+}
+.item {
+
+  // .item__list
+
+  &__list {
+  }
+}
+.link {
+
+  // .link__nav
+
+  &__nav {
+font-family: var(--font-main);
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.7px;
+  }
+}

@@ -1,0 +1,25 @@
+:root {
+	
+	// Fonts
+	--font-accent: 'Playfair Display', serif;
+	--font-main: 'Raleway', sans-serif;
+	--font-description: 'Roboto', sans-serif;
+	--container-width: 1140px;
+	--container-padding: 15px;
+
+//  Colors
+
+	--page-bg:rgba(36, 43, 51, 1) ;
+	--text-color: rgba(255, 255, 255, 1);
+	--text-accent: rgba(212, 193, 127, 1);
+	--footer-bg: #2D343C;
+	--color-socialIcon: #fff;
+
+
+
+}
+
+	// Media
+  $laptop-size: 1199px;
+	$tablet-size: 999px;
+	$mobile-size: 599px;

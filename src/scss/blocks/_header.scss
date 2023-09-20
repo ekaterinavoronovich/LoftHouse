@@ -1,0 +1,103 @@
+.header {
+	max-width: 1920px;
+  height: 840px;
+ 	background: linear-gradient(180deg, #33242A 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url(./../img/Header-bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 50px 0 74px;
+  @include mediaTablet{
+	 height: auto;
+
+	}
+
+	&__nav {
+		padding: 0 21.09%;
+		width: 100vw;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@media screen and (max-width:$laptop-size) {
+		padding: 0 15%;	
+		}
+	
+	}
+}
+.container__header{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+
+	@include mediaTablet{
+		row-gap: 50px;
+	}
+}
+.header__title{
+//  width: 582px;
+//  height: 470px;
+position: relative;
+}
+.title{
+color: var(--text-accent);
+text-align: center;
+font-family: var(--font-accent);
+font-size: 3rem;
+padding-bottom: 121px;
+@include mediaTablet {
+	font-size: 2.5rem;
+	padding-bottom: 100px;
+}
+
+}
+.header__title-icon{
+	position: absolute;
+	bottom: 0px;
+	left:50%;
+	transform: translate(-50%,0);
+}
+.mouse{
+	width: 40px;
+  height: 40px;
+}
+.link__info {
+font-family: Var(--font-main);
+font-size: 1.125rem;
+position: relative;
+
+&-address, &-phone {
+padding-left: 35px;
+&::before{
+	content: "";
+	position: absolute;
+	left: 0px;
+	top:0px;
+	width: 21px;
+	height: 21px;
+}	
+}
+
+ &-address::before{
+  background: url(./../img/icon/placeholder.svg), no-repeat;
+
+}
+
+&-phone::before{
+	background: url(./../img/icon/phone-call.svg), no-repeat;
+}
+}
+
+
+.header__info{
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 98px;
+@include mediaTablet{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap:40px;
+}
+}

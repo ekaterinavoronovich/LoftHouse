@@ -1,0 +1,62 @@
+.video {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  &::after {
+    position: absolute;
+    content: "IV";
+    top:0;
+    left: calc(50% + 555px);
+    transform: translate(-50%,0%);
+    line-height: 1.15;
+    opacity: 0.02;
+    font-size: 20.83vmax; //400px;
+    font-family: var(--font-accent);
+  }
+
+  // .video__link
+
+  &__link {
+   position: relative;
+   display: inline-block;
+   text-align: center;
+   &::before{
+    content: "";
+    position: absolute;
+    left:0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background:rgba(36, 43, 51, 0.80);
+    transition: background-color 0.2s ease-in;
+    
+   }
+   &:hover::before{
+      background:rgba(36, 43, 51, 0.50); 
+    }
+  }
+ .video__link:hover .video__icon-play{
+  transform: translate(-50%,-50%) scale(1.2);
+  filter: saturate(1.5)
+ }
+  // .video__img
+
+  &__img {
+    
+  }
+
+  // .video__icon-play
+
+  &__icon-play {
+   
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  @include mediaTablet{
+   width: 60px;  
+   height: 60px;
+  }
+  }
+}
+
