@@ -9,6 +9,11 @@ function mobileNav() {
 		menuIcon.classList.toggle('nav-icon--active');
 		document.body.classList.toggle('no-scroll');
 	};
+	nav.onclick = function () {
+		nav.classList.toggle('mobile-nav--open');
+		menuIcon.classList.toggle('nav-icon--active');
+		document.body.classList.toggle('no-scroll');
+	};
 }
 
 export default mobileNav;
